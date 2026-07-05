@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Jacko — Palmerston North's Morning Ritual | Open from 6AM</title>
+  <meta name="description" content="Cafe Jacko, 8 George Street, Palmerston North. Big breakfasts, Fair Trade organic coffee and the warmest welcome in Palmy. Open from 6am, seven days." />
+  <meta property="og:title" content="Cafe Jacko — Palmerston North" />
+  <meta property="og:description" content="Big breakfasts. Organic coffee. Palmy's morning ritual since forever. Open from 6am." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>☕</text></svg>" />
+</head>
+<body>
+
+  <!-- ══════════ PRELOADER ══════════ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <img class="preloader-logo" src="Images/logo.png" alt="Cafe Jacko" />
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-logo">
+      <img class="nav-logo-img" src="Images/logo.png" alt="Cafe Jacko — home" />
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#locals">Locals</a>
+      <a href="#palmy">Palmy</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-right">
+      <span class="open-pill" id="openPill"><span class="open-dot"></span><span id="openPillText">Checking…</span></span>
+      <a href="tel:+6463593303" class="btn btn--small"><span class="btn-small-full">Book a Table</span><span class="btn-small-short">☎ Book</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════ MOBILE MENU ══════════ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav>
+      <a href="#story" style="--i:0">Our Story</a>
+      <a href="#menu" style="--i:1">Menu</a>
+      <a href="#locals" style="--i:2">Locals</a>
+      <a href="#palmy" style="--i:3">Palmy</a>
+      <a href="#visit" style="--i:4">Visit</a>
+      <a href="tel:+6463593303" class="mobile-menu-cta" style="--i:5">☎ 06 359 3303</a>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-blob hero-blob--1"></div>
+        <div class="hero-blob hero-blob--2"></div>
+        <div class="hero-grain"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-kicker reveal-up" style="--d:0">
+          <span class="hero-kicker-line"></span>
+          8 George Street · Palmerston North · Aotearoa
+        </p>
+        <h1 class="hero-title">
+          <span class="hero-title-line"><span class="reveal-mask" style="--d:1">Palmy wakes</span></span>
+          <span class="hero-title-line"><span class="reveal-mask reveal-mask--accent" style="--d:2">up at Jacko's.</span></span>
+        </h1>
+        <p class="hero-sub reveal-up" style="--d:3">
+          Doors open at <strong>6am</strong> — before the birds, before The Square stirs.
+          Big honest breakfasts, Fair Trade organic coffee, and a welcome
+          that turns first-timers into regulars.
+        </p>
+        <div class="hero-ctas reveal-up" style="--d:4">
+          <a href="#menu" class="btn btn--primary">Explore the Menu <span class="btn-arrow">↓</span></a>
+          <a href="#visit" class="btn btn--ghost">Find Us</a>
+        </div>
+
+        <div class="hero-stats reveal-up" style="--d:5">
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-count="4.7" data-decimals="1">0</span><span class="hero-stat-star">★</span>
+            <span class="hero-stat-label">Google · 1,150+ reviews</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-count="6">0</span><span class="hero-stat-star">AM</span>
+            <span class="hero-stat-label">Earliest doors in town</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">#</span><span class="hero-stat-star" style="font-size:inherit" data-count="4">0</span>
+            <span class="hero-stat-label">Of 200+ eateries in Palmy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coffee cup illustration -->
+      <div class="hero-cup reveal-up" style="--d:4" aria-hidden="true">
+        <svg viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="steam-group">
+            <path class="steam steam-1" d="M110 90 C100 70, 120 60, 110 40 C100 20, 120 10, 115 -5" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+            <path class="steam steam-2" d="M150 85 C140 65, 160 55, 150 35 C140 15, 160 5, 155 -10" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+            <path class="steam steam-3" d="M190 90 C180 70, 200 60, 190 40 C180 20, 200 10, 195 -5" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+          </g>
+          <path d="M60 130 h180 a8 8 0 0 1 8 8 c0 80 -35 150 -98 150 c-63 0 -98 -70 -98 -150 a8 8 0 0 1 8 -8z" fill="var(--espresso)"/>
+          <path d="M245 150 c35 -5 45 15 38 40 c-7 26 -33 38 -55 32" stroke="var(--espresso)" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <ellipse cx="150" cy="138" rx="86" ry="14" fill="var(--gold)"/>
+          <ellipse cx="150" cy="138" rx="60" ry="9" fill="var(--cream)"/>
+          <path class="latte-fern" d="M150 132 c0 4 -3 8 -3 12 m3 -12 c0 4 3 8 3 12 m-3 -14 v16" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round"/>
+          <ellipse cx="150" cy="310" rx="70" ry="10" fill="var(--espresso)" opacity="0.12"/>
+        </svg>
+      </div>
+
+      <a href="#story" class="hero-scroll" aria-label="Scroll down">
+        <span class="hero-scroll-text">Scroll</span>
+        <span class="hero-scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ══════════ TICKER ══════════ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Open from 6AM</span><i>✦</i>
+        <span>Fair Trade Organic Coffee</span><i>✦</i>
+        <span>Big Breakfasts</span><i>✦</i>
+        <span>Fresh Cabinet Daily</span><i>✦</i>
+        <span>Gluten Free Options</span><i>✦</i>
+        <span>Free Parking Below Harvey Norman</span><i>✦</i>
+        <span>Open from 6AM</span><i>✦</i>
+        <span>Fair Trade Organic Coffee</span><i>✦</i>
+        <span>Big Breakfasts</span><i>✦</i>
+        <span>Fresh Cabinet Daily</span><i>✦</i>
+        <span>Gluten Free Options</span><i>✦</i>
+        <span>Free Parking Below Harvey Norman</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ══════════ STORY ══════════ -->
+    <section class="story section" id="story">
+      <div class="section-inner story-grid">
+        <div class="story-left">
+          <p class="section-kicker reveal-up">Our Story</p>
+          <h2 class="section-title reveal-up">The bloke, the beans,<br /><em>the ritual.</em></h2>
+          <div class="story-copy reveal-up">
+            <p>
+              There are cafes, and then there's <strong>Jacko's</strong>. Tucked on George Street —
+              Palmy's cafe row — we've been flipping eggs and pulling shots while most of
+              the city is still hitting snooze.
+            </p>
+            <p>
+              The man himself is a local legend: the kind of host who remembers your order,
+              your kids' names, and exactly how you like your flat white. Walk in once and
+              you're a stranger. Walk in twice and you're <em>whānau</em>.
+            </p>
+            <p>
+              No fuss, no foam art competitions, no $30 smashed avo with edible flowers.
+              Just honest kai, generous portions, Fair Trade organic coffee — and the
+              warmest room in the Manawatū.
+            </p>
+          </div>
+          <div class="story-sign reveal-up">
+            <span class="story-sign-name">— Jacko &amp; the crew</span>
+          </div>
+        </div>
+
+        <div class="story-right">
+          <div class="story-card reveal-up tilt" style="--d:1">
+            <span class="story-card-emoji">🍳</span>
+            <h3>Honest Kai</h3>
+            <p>From eggs benny to lamb's fry &amp; bacon — cooked fresh, plated big, priced fair.</p>
+          </div>
+          <div class="story-card reveal-up tilt" style="--d:2">
+            <span class="story-card-emoji">🌱</span>
+            <h3>Fair Trade Organic</h3>
+            <p>Every cup we pour is Fair Trade organic. Good for the growers, better in your mug.</p>
+          </div>
+          <div class="story-card reveal-up tilt" style="--d:3">
+            <span class="story-card-emoji">🌅</span>
+            <h3>Up Before the Birds</h3>
+            <p>6am doors, seven days. Tradies, nurses, early flights — we've got you sorted.</p>
+          </div>
+          <div class="story-card reveal-up tilt" style="--d:4">
+            <span class="story-card-emoji">🤝</span>
+            <h3>Everyone's a Regular</h3>
+            <p>Booked-out by noon most days. The locals know — now you do too.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ MENU ══════════ -->
+    <section class="menu section" id="menu">
+      <div class="section-inner">
+        <div class="menu-header">
+          <div>
+            <p class="section-kicker section-kicker--light reveal-up">The Digital Menu</p>
+            <h2 class="section-title section-title--light reveal-up">What's cooking<br /><em>this morning?</em></h2>
+          </div>
+          <p class="menu-note reveal-up">
+            Cooked fresh from 6am. Half serves on lots of dishes.<br />
+            <span class="menu-legend"><b class="tag tag--gf">GF</b> gluten free on request +$2 &nbsp; <b class="tag tag--v">V</b> vege or vegan &nbsp; <b class="tag tag--fav">★</b> Jacko's favourite</span>
+          </p>
+        </div>
+
+        <div class="menu-tabs reveal-up" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab is-active" data-cat="breakfast" role="tab" aria-selected="true">Breakfast</button>
+          <button class="menu-tab" data-cat="hearty" role="tab" aria-selected="false">Hearty Meals</button>
+          <button class="menu-tab" data-cat="lunch" role="tab" aria-selected="false">Lunch</button>
+          <button class="menu-tab" data-cat="kids" role="tab" aria-selected="false">Little Fullas</button>
+          <button class="menu-tab" data-cat="drinks" role="tab" aria-selected="false">Drinks</button>
+          <span class="menu-tab-glider" id="tabGlider"></span>
+        </div>
+
+        <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+
+        <p class="menu-disclaimer reveal-up">
+          Soy, almond, coconut &amp; oat milk +$1 · fridge drinks $4.50 · give us a bell on
+          <a href="tel:+6463593303">06&nbsp;359&nbsp;3303</a> for today's specials. Heads up: we're cash friendly!
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════ LOCALS / REVIEWS ══════════ -->
+    <section class="locals section" id="locals">
+      <div class="section-inner">
+        <p class="section-kicker reveal-up">Word on George Street</p>
+        <h2 class="section-title reveal-up">Don't take <em>our</em> word for it.</h2>
+      </div>
+      <div class="reviews-marquee" id="reviewsMarquee">
+        <div class="reviews-track">
+          <figure class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"One of the best breakfasts I've ever had. The eggs benny is unreal."</blockquote>
+            <figcaption>— Solo traveller, Tripadvisor</figcaption>
+          </figure>
+          <figure class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"Friendly staff, great size portions and the coffee is always amazing."</blockquote>
+            <figcaption>— Palmy local</figcaption>
+          </figure>
+          <figure class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"Best brekky in ages. Value for money, great service, warm atmosphere."</blockquote>
+            <figcaption>— Google review</figcaption>
+          </figure>
+          <figure class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"They are welcoming, enthusiastic, smiling and efficient. Every single time."</blockquote>
+            <figcaption>— Regular since day one</figcaption>
+          </figure>
+          <figure class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"Generous portions, good service — fabulous. I give 5 stars."</blockquote>
+            <figcaption>— Google review</figcaption>
+          </figure>
+          <!-- duplicate for seamless loop -->
+          <figure class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"One of the best breakfasts I've ever had. The eggs benny is unreal."</blockquote>
+            <figcaption>— Solo traveller, Tripadvisor</figcaption>
+          </figure>
+          <figure class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"Friendly staff, great size portions and the coffee is always amazing."</blockquote>
+            <figcaption>— Palmy local</figcaption>
+          </figure>
+          <figure class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"Best brekky in ages. Value for money, great service, warm atmosphere."</blockquote>
+            <figcaption>— Google review</figcaption>
+          </figure>
+          <figure class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"They are welcoming, enthusiastic, smiling and efficient. Every single time."</blockquote>
+            <figcaption>— Regular since day one</figcaption>
+          </figure>
+          <figure class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>"Generous portions, good service — fabulous. I give 5 stars."</blockquote>
+            <figcaption>— Google review</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ PALMY / LOCALITY ══════════ -->
+    <section class="palmy section" id="palmy">
+      <div class="section-inner palmy-grid">
+        <div class="palmy-left">
+          <p class="section-kicker section-kicker--light reveal-up">Proudly Palmy</p>
+          <h2 class="section-title section-title--light reveal-up">Rooted in the<br /><em>Manawatū.</em></h2>
+          <p class="palmy-copy reveal-up">
+            We're two minutes from Te Marae o Hine — The Square — in the heart of a city
+            of students, farmers, scientists and dreamers. When the morning fog rolls off
+            the Manawatū River, George Street smells like coffee. That's us.
+          </p>
+          <ul class="palmy-list">
+            <li class="reveal-up" style="--d:1"><span>📍</span> 2 min walk from The Square &amp; the i-SITE</li>
+            <li class="reveal-up" style="--d:2"><span>🅿️</span> Free parking underneath Harvey Norman</li>
+            <li class="reveal-up" style="--d:3"><span>♿</span> Wheelchair accessible, pram friendly</li>
+            <li class="reveal-up" style="--d:4"><span>🌤️</span> Sunny outdoor seating on George Street</li>
+          </ul>
+        </div>
+        <div class="palmy-right reveal-up">
+          <div class="palmy-poster tilt">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylised poster of Palmerston North">
+              <rect width="400" height="500" rx="18" fill="var(--cream)"/>
+              <!-- sun -->
+              <circle class="poster-sun" cx="310" cy="110" r="52" fill="var(--yellow)"/>
+              <!-- ranges -->
+              <path d="M0 260 L80 190 L150 250 L230 170 L320 255 L400 200 L400 330 L0 330 Z" fill="var(--sage)" opacity="0.85"/>
+              <path d="M0 300 L100 240 L190 300 L290 235 L400 300 L400 360 L0 360 Z" fill="var(--espresso)" opacity="0.9"/>
+              <!-- river -->
+              <path class="poster-river" d="M0 385 C80 370, 140 400, 220 385 C300 370, 340 400, 400 385" stroke="var(--terracotta)" stroke-width="10" fill="none" stroke-linecap="round"/>
+              <path class="poster-river poster-river--2" d="M0 415 C80 400, 140 430, 220 415 C300 400, 340 430, 400 415" stroke="var(--terracotta)" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.5"/>
+              <!-- fern frond -->
+              <g transform="translate(52 96) rotate(-18)" stroke="var(--espresso)" stroke-width="4" stroke-linecap="round" fill="none">
+                <path d="M0 90 C10 50, 30 20, 70 0"/>
+                <path d="M8 66 c-12 -4 -20 -14 -22 -26"/><path d="M14 50 c-12 -4 -18 -14 -20 -26"/>
+                <path d="M22 36 c-10 -6 -14 -16 -14 -28"/><path d="M34 22 c-8 -8 -10 -18 -8 -30"/>
+                <path d="M12 74 c12 6 24 6 36 0"/><path d="M20 58 c12 6 24 4 34 -2"/>
+                <path d="M30 42 c12 4 22 2 32 -6"/><path d="M42 28 c10 2 20 -2 28 -10"/>
+              </g>
+              <text x="30" y="465" font-family="Fraunces, serif" font-weight="700" font-size="34" fill="var(--espresso)">PALMERSTON NTH</text>
+              <text x="30" y="488" font-family="Sora, sans-serif" font-size="14" letter-spacing="4" fill="var(--terracotta)">40.3523° S · 175.6082° E</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ VISIT ══════════ -->
+    <section class="visit section" id="visit">
+      <div class="section-inner">
+        <p class="section-kicker reveal-up">Come Say Gidday</p>
+        <h2 class="section-title reveal-up">The kettle's <em>always on.</em></h2>
+
+        <div class="visit-grid">
+          <div class="visit-card reveal-up" style="--d:1">
+            <h3>Hours</h3>
+            <ul class="hours-list" id="hoursList">
+              <li data-day="1"><span>Monday</span><span>6:00am – 2:00pm</span></li>
+              <li data-day="2"><span>Tuesday</span><span>6:00am – 2:00pm</span></li>
+              <li data-day="3"><span>Wednesday</span><span>6:00am – 2:00pm</span></li>
+              <li data-day="4"><span>Thursday</span><span>6:00am – 2:00pm</span></li>
+              <li data-day="5"><span>Friday</span><span>6:00am – 3:00pm</span></li>
+              <li data-day="6"><span>Saturday</span><span>7:00am – 3:00pm</span></li>
+              <li data-day="0"><span>Sunday</span><span>7:00am – 3:00pm</span></li>
+            </ul>
+            <p class="visit-fineprint">Public holiday hours may differ — flick us a call.</p>
+          </div>
+
+          <div class="visit-card reveal-up" style="--d:2">
+            <h3>Find Us</h3>
+            <address>
+              8 George Street<br />
+              Palmerston North Central 4410<br />
+              Manawatū, Aotearoa New Zealand
+            </address>
+            <a class="visit-link" href="https://maps.google.com/?q=Cafe+Jacko,+8+George+Street,+Palmerston+North" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <h3 style="margin-top:1.6rem">Get in Touch</h3>
+            <a class="visit-link visit-link--big" href="tel:+6463593303">06 359 3303</a>
+            <p class="visit-fineprint">We fill up fast by noon — booking ahead is a smart move, especially weekends.</p>
+          </div>
+
+          <div class="visit-card visit-card--map reveal-up" style="--d:3">
+            <iframe
+              title="Map to Cafe Jacko, 8 George Street, Palmerston North"
+              src="https://www.google.com/maps?q=Cafe%20Jacko%2C%208%20George%20Street%2C%20Palmerston%20North%2C%20New%20Zealand&output=embed"
+              loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CTA BAND ══════════ -->
+    <section class="cta-band">
+      <div class="cta-band-inner reveal-up">
+        <h2>Tomorrow, 6am.<br /><em>Your table's waiting.</em></h2>
+        <a href="tel:+6463593303" class="btn btn--primary btn--big">Book on 06 359 3303</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo-img" src="Images/logo.png" alt="Cafe Jacko" />
+        <p>Palmy's morning ritual. Breakfast &amp; lunch, done properly, since forever.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>8 George Street<br/>Palmerston North 4410</p>
+        <a href="tel:+6463593303">06 359 3303</a>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <a href="https://www.facebook.com/p/Cafe-Jacko-100057146783982/" target="_blank" rel="noopener">Facebook ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g255368-d2625091-Reviews-Cafe_Jacko-Palmerston_North_Manawatu_Wanganui_Region_North_Island.html" target="_blank" rel="noopener">Tripadvisor ↗</a>
+      </div>
+      <div class="footer-col">
+        <h4>Good to Know</h4>
+        <p>Fair Trade Organic Coffee<br/>Gluten free options<br/>Takeaway available · Cash friendly</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Cafe Jacko · Palmerston North</span>
+      <span>Made with ☕ in the Manawatū</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
